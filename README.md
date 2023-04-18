@@ -1,5 +1,5 @@
 # mt_practice
-- Name: <Jialu Jin>
+- Name: Jialu Jin
 - Class: DSCI-310
 - Year: 2022-23
 - Term: W2
