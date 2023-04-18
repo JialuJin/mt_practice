@@ -1,0 +1,22 @@
+name: main
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  midterm:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run basic terminal commands
+      run: 
+          pwd
+          ls
+      
+    - name: Build Docker
+      run: docker build . --file Dockerfile --tag dsci-310-midterm:latest
